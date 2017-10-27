@@ -1,0 +1,20 @@
+aws cloudformation package \     
+    --template-file template.yaml \
+    --output-template-file output.yaml \
+    --s3-bucket sam-template-cf 
+
+
+  aws cloudformation deploy --template-file /Users/tejareddygatla/Downloads/output.yaml --stack-name sam-test  --capabilities CAPABILITY_IAM
+
+
+https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+
+https://stackoverflow.com/questions/43030790/aws-sam-how-to-specify-the-name-of-your-function
+
+http://london-summit-slides-2017.s3.amazonaws.com/Deep%20Dive%20on%20Serverless_Application_Development.pdf
+
+https://cloudacademy.com/blog/hands-on-aws-serverless-application-model/
+
+https://github.com/awslabs/serverless-application-model/blob/master/examples/2016-10-31/api_backend/template.yaml
+
+https://github.com/awslabs/serverless-application-model/issues/127
